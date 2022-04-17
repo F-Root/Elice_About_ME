@@ -15,75 +15,86 @@
     <script defer src="main.js"></script>
   </head>
   <body>
-    <header>
-      <h1>About Me</h1>
-      <nav>
-        <ul id="menus">
-          <!-- <li class="menu">Who are you</li>
-          <li class="menu">Why are you in elice</li>
-          <li class="menu">What do you want</li> -->
-          <li class="menu"><div>Who</div></li>
-          <li class="menu"><div>Why</div></li>
-          <li class="menu"><div>What</div></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <div id="contents">
-        <div class="content active">
-          <h2>Who am I?</h2>
-          <div>
-            <p>이름 : 김용민</p>
-            <p>나이/성별 : 27/남</p>
-            <p>
-              인사글 : 음악을 좋아하고 취미는 피아노 연주와 노래방가기입니다.
-            </p>
+    <div id="click">
+      <h2><a href="#wrap">Click Me!</a></h2>
+    </div>
+    <div id="wrap">
+      <header>
+        <h1>About Me</h1>
+        <nav>
+          <ul id="menus">
+            <li class="menu active"><a href="#who">Who</a></li>
+            <li class="menu"><a href="#why">Why</a></li>
+            <li class="menu"><a href="#what">What</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <div id="contents">
+          <div class="content active" id="who">
+            <h2>Who am I?</h2>
+            <div>
+              <p>안녕하세요 (_ _)</p>
+              <p>프론트엔드 개발자를 지망하는 김용민(27)입니다</p>
+              <p>취미는 음악감상, 피아노연주, 드라이브 입니다</p>
+              <p>특기?는 잘 모르겠습니다...</p>
+              <img src="img/music.jpg" alt="music" />
+              <img src="img/piano.jpg" alt="piano" />
+              <img src="img/drive.jpg" alt="drive" />
+            </div>
+          </div>
+          <div class="content" id="why">
+            <h2>Why did I join Elice?</h2>
+            <div>
+              <p>
+                저만의 음악 스트리밍 사이트를 만들고 싶어서 웹개발을 배우게
+                되었습니다.
+              </p>
+              <p>
+                당장은 프론트엔드에 관심이 치우쳐져있지만 후에 풀스택 개발자가
+                되는 것을 목표로 하고있습니다.
+              </p>
+              <p>
+                자바스크립트 언어에 관심이 많고 잘 다루고싶어서 엘리스에
+                지원하게 되었습니다.
+              </p>
+              <img src="img/soundcloud.jpg" alt="streaming" />
+              <img src="img/dev.jpg" alt="frontend" />
+              <img src="img/js.jpg" alt="javascript" />
+            </div>
+          </div>
+          <div class="content" id="what">
+            <h2>What do I want to get here?</h2>
+            <div>
+              <p>
+                자바스크립트기반 프레임워크인 React와 Node.js를 잘 배우고
+                싶습니다.
+              </p>
+              <p>
+                서로 좋은 자극제가 되어줄 수 있는 개발자 동료를 얻어가고
+                싶습니다.
+              </p>
+              <p>
+                갇혀있는 개발자가 아닌 넓게보고 혼자 성장할 수 있는 개발자가
+                되고 싶습니다.
+              </p>
+              <img src="img/cowork.jpg" alt="coworking" />
+              <img src="img/impress.jpg" alt="impress" />
+              <img src="img/grow.jpg" alt="growing" />
+            </div>
           </div>
         </div>
-        <div class="content">
-          <h2>Why did I join Elice?</h2>
-          <div>
-            <p>
-              저만의 음악 스트리밍 사이트를 만들고 싶어서 웹개발을 배우게
-              되었습니다.
-            </p>
-            <p>
-              당장은 프론트엔드에 관심이 치우쳐져있지만 후에 풀스택 개발자가
-              되는 것을 목표로 하고있습니다.
-            </p>
-            <p>
-              자바스크립트 언어에 관심이 많고 잘 다루고싶어서 엘리스에 지원하게
-              되었습니다.
-            </p>
+      </section>
+      <footer>
+        <div id="footer">
+          <div id="copyright">
+            <p>Copyright © RooT_Kim. All rights reserved.</p>
+          </div>
+          <div id="contact">
+            <p>Contact : bdd3452@gmail.com</p>
           </div>
         </div>
-        <div class="content">
-          <h2>What do I want to get here?</h2>
-          <div>
-            <p>
-              자바스크립트기반 프레임워크인 React와 Node.js를 잘 배우고
-              싶습니다.
-            </p>
-            <p>
-              서로 좋은 자극제가 되어줄 수 있는 개발자 동료를 얻어가고 싶습니다.
-            </p>
-            <p>
-              갇혀있는 개발자가 아닌 넓게보고 혼자 성장할 수 있는 개발자가 되고
-              싶습니다.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div id="footer">
-        <div id="copyright">
-          <p>Copyright © RooT_Kim. All rights reserved.</p>
-        </div>
-        <div id="contact">
-          <p>Contact : bdd3452@gmail.com</p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
