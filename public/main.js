@@ -82,7 +82,6 @@ for (let i = 0; i < menu.length; i++) {
     e.preventDefault();
 
     let tabId = this.querySelector("a").getAttribute("href");
-    console.log(tabId);
     let actContent = document.querySelector(tabId);
 
     document.querySelectorAll(".menu, .content").forEach(function (item) {
